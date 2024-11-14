@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditProfileController">
+   <children>
+      <Pane layoutX="43.0" layoutY="39.0" prefHeight="321.0" prefWidth="513.0">
+         <children>
+            <Label layoutX="26.0" layoutY="14.0" prefHeight="35.0" prefWidth="179.0" text="Edit your Profile">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="89.0" prefHeight="24.0" prefWidth="134.0" text="Enter new first name ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstNameField" layoutX="170.0" layoutY="89.0" promptText="New first name" />
+            <Label layoutX="26.0" layoutY="138.0" prefHeight="24.0" prefWidth="134.0" text="Enter new last name ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastNameField" layoutX="170.0" layoutY="137.0" promptText="New last name" />
+            <Label layoutX="26.0" layoutY="191.0" prefHeight="24.0" prefWidth="134.0" text="Enter new password ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="passwordField" layoutX="170.0" layoutY="191.0" promptText="New password" />
+            <Button layoutX="121.0" layoutY="256.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="35.0" prefWidth="124.0" style="-fx-background-color: #d77812;" text="Save" />
+			<Button layoutX="302.0" layoutY="256.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="35.0" prefWidth="124.0" style="-fx-background-color: #d77812;" text="Cancel" />
+			
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
